@@ -46,47 +46,37 @@ export default function CapabilitiesPage() {
             </svg>
             <span className="bn">
               <b>MINIBYTE</b>
-              <small>AI RESEARCH LAB</small>
             </span>
           </a>
           <nav className="nav" aria-label="Primary">
             <ul>
               <li>
                 <a href="/work" data-sec="work">
-                  <i>01</i>
                   WORK
                 </a>
               </li>
               <li>
                 <a href="/capabilities">
-                  <i>02</i>
                   CAPABILITIES
                 </a>
               </li>
               <li>
                 <a href="/research">
-                  <i>03</i>
                   RESEARCH
                 </a>
               </li>
               <li>
                 <a href="/about">
-                  <i>04</i>
                   ABOUT
                 </a>
               </li>
               <li>
                 <a href="#contact">
-                  <i>05</i>
                   CONTACT
                 </a>
               </li>
             </ul>
           </nav>
-          <div className="status" aria-label="System status">
-            <i />
-            SYSTEM ONLINE
-          </div>
           <button className="mbtn" id="mbtn" aria-expanded="false" aria-controls="menu">MENU</button>
         </div>
       </header>
@@ -94,41 +84,31 @@ export default function CapabilitiesPage() {
         <ol>
           <li>
             <a href="/work">
-              <i>01</i>
               Work
             </a>
           </li>
           <li>
             <a href="/capabilities">
-              <i>02</i>
               Capabilities
             </a>
           </li>
           <li>
             <a href="/research">
-              <i>03</i>
               Research
             </a>
           </li>
           <li>
             <a href="/about">
-              <i>04</i>
               About
             </a>
           </li>
           <li>
             <a href="#contact">
-              <i>05</i>
               Contact
             </a>
           </li>
         </ol>
         <div className="menu-foot mono">
-          <span style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-            <i className="pulse" style={{ display: 'block', width: '7px', height: '7px', borderRadius: '50%', background: 'var(--blue)' }} />
-            SYSTEM ONLINE
-          </span>
-          {' '}
           <span>hello@minibyte.ai</span>
           {' '}
           <span>01101101 / THINKING IN BYTES</span>
