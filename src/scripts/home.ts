@@ -406,7 +406,9 @@ addEventListener('pointermove',function(e){mouse.x=(e.clientX/innerWidth-.5)*2;m
 /* ---------- hero: THE BYTE ---------- */
 var heroP=0;
 safe(function heroScene(){
-  var cv=$('#glHero'),mob=innerWidth<760,r=mkR(cv,!mob);
+  var cv=$('#glHero');
+  if(!cv){$('#top')?.classList.add('no-gl');return}
+  var mob=innerWidth<760,r=mkR(cv,!mob);
   if(!r){$('#top').classList.add('no-gl');return}
   var scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(36,1,.1,100);cam.position.set(0,0,11);
   scene.add(new THREE.AmbientLight(0x9aa0ad,.6));var kl=new THREE.DirectionalLight(0xF3F4F1,1.3);kl.position.set(-4,5,6);scene.add(kl);var rim=new THREE.DirectionalLight(0x8E97FF,.7);rim.position.set(5,-2,-4);scene.add(rim);

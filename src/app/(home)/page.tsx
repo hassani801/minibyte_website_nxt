@@ -149,31 +149,20 @@ export default function HomePage() {
       <main id="main">
         {/* 1 HERO */}
         <section className="hero ink" id="top" aria-label="Introduction">
-          <div className="hero-gl" data-cursor="explore">
-            <canvas id="glHero" aria-hidden="true" />
-          </div>
           <div className="hero-in wrap">
-            <div className="hero-top">
-              <div className="mono hero-r" style={{ '--i': '0' } as React.CSSProperties}>
-                <span style={{ color: 'var(--paper)' }}>AI RESEARCH LAB</span>
-                <br />
-                <span className="mut">01 / 05</span>
-              </div>
-              <p className="alt hero-r" style={{ '--i': '1' } as React.CSSProperties}>AI systems, robotics and intelligent infrastructure engineered for complex environments.</p>
-            </div>
-            <div>
+            <div className="hero-mid">
               <h1 className="hero-h">
-                <span className="hl hero-r" style={{ '--i': '2' } as React.CSSProperties}>Building</span>
+                <span className="hl hero-r" style={{ '--i': '0' } as React.CSSProperties}>Building</span>
                 {' '}
-                <span className="hl hero-r" style={{ '--i': '3' } as React.CSSProperties}>Intelligence</span>
+                <span className="hl hero-r" style={{ '--i': '1' } as React.CSSProperties}>Intelligence</span>
                 {' '}
-                <span className="hl dim hero-r" style={{ '--i': '4' } as React.CSSProperties}>for the real world.</span>
+                <span className="hl dim hero-r" style={{ '--i': '2' } as React.CSSProperties}>for the real world.</span>
               </h1>
               <div className="hero-sub">
-                <p className="hero-r" style={{ '--i': '5' } as React.CSSProperties}>
+                <p className="hero-r" style={{ '--i': '3' } as React.CSSProperties}>
                   We research and build intelligent systems across AI, robotics, automation, computer vision and embedded intelligence.
                 </p>
-                <div className="ctas hero-r" style={{ '--i': '6' } as React.CSSProperties}>
+                <div className="ctas hero-r" style={{ '--i': '4' } as React.CSSProperties}>
                   <a className="btn pri mag" href="/work">
                     {'Explore our work '}
                     <span className="ar">→</span>
@@ -183,23 +172,8 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="hero-foot mono hero-r" style={{ '--i': '7' } as React.CSSProperties}>
+            <div className="hero-foot mono hero-r" style={{ '--i': '5' } as React.CSSProperties}>
               <a href="#idea" className="lnk">Scroll to explore ↓</a>
-              <div className="sys">
-                <span>SYSTEM</span>
-                <span id="sysBits">01 01 00 01 01 01 00 01</span>
-                {' '}
-                <span className="bits drift" aria-hidden="true">
-                  <i className="z" style={{ '--k': '0' } as React.CSSProperties} />
-                  <i style={{ '--k': '1' } as React.CSSProperties} />
-                  <i style={{ '--k': '2' } as React.CSSProperties} />
-                  <i className="z" style={{ '--k': '3' } as React.CSSProperties} />
-                  <i style={{ '--k': '4' } as React.CSSProperties} />
-                  <i style={{ '--k': '5' } as React.CSSProperties} />
-                  <i className="z" style={{ '--k': '6' } as React.CSSProperties} />
-                  <i style={{ '--k': '7' } as React.CSSProperties} />
-                </span>
-              </div>
             </div>
           </div>
         </section>

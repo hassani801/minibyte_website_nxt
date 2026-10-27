@@ -138,6 +138,7 @@ html.c-project .cur-ring span,html.c-explore .cur-ring span{opacity:1}
 .hero.no-gl .hero-gl{background:radial-gradient(60% 50% at 70% 45%,rgba(243,244,241,.07),transparent 70%)}
 .hero-in{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding-top:calc(96px + env(safe-area-inset-top,0px));padding-bottom:clamp(20px,3vw,36px);pointer-events:none;transform:translateY(calc(var(--hp,0)*-60px));opacity:calc(1 - var(--hp,0)*1.25)}
 .hero-in a,.hero-in button{pointer-events:auto}
+.hero-mid{margin:auto 0;display:flex;flex-direction:column}
 .hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
 .hero-top .alt{max-width:30ch;color:var(--mut-d);text-align:right;font:400 .9rem/1.45 var(--sans);letter-spacing:0;text-transform:none}
 .hero-h{font-weight:500;font-size:clamp(2.2rem,min(7.4vw,16svh),8.6rem);line-height:.92;letter-spacing:-.045em;text-transform:uppercase}
