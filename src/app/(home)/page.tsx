@@ -129,6 +129,9 @@ export default function HomePage() {
       <main id="main">
         {/* 1 HERO */}
         <section className="hero ink" id="top" aria-label="Introduction">
+          <div className="hero-gl" data-cursor="explore">
+            <canvas id="glHero" aria-hidden="true" />
+          </div>
           <div className="hero-in wrap">
             <div className="hero-mid">
               <h1 className="hero-h">
