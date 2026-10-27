@@ -373,32 +373,7 @@ export default function HomePage() {
             <div className="res-main" id="resList" />
           </div>
         </section>
-        {/* 8 STACK */}
-        <section className="sec ink" id="stack" aria-labelledby="stackH" style={{ paddingBottom: '0' }}>
-          <div className="wrap stack-head">
-            <div className="lbl mono" data-rv="">
-              <i />
-              <span>SYSTEM MAP</span>
-            </div>
-            <h2 className="h2" id="stackH" data-split="" data-rv="">
-              The stack
-              <br />
-              is the system.
-            </h2>
-          </div>
-          <div className="stack-stage" id="stackStage" data-cursor="explore">
-            <canvas id="glStack" aria-label="Interactive network of eight technology domains" role="img" />
-            <div className="lbls" id="lbls" aria-hidden="true" />
-            <div className="stack-ui">
-              <ul id="stList" aria-label="Choose a node" />
-              <div className="panel" aria-live="polite">
-                <h3 id="stName">AI</h3>
-                <p id="stDesc" />
-                <p className="mono lk" id="stLinks" />
-              </div>
-            </div>
-          </div>
-        </section>
+
         {/* 9 PROCESS */}
         <section className="paper" id="process" aria-labelledby="procH">
           <div className="sec" style={{ paddingBottom: 'clamp(40px,6vw,80px)' }}>
@@ -610,9 +585,6 @@ export default function HomePage() {
         </section>
         {/* 13 CTA */}
         <section className="sec ink cta" id="contact" aria-labelledby="ctaH">
-          <div className="cta-gl" data-cursor="explore">
-            <canvas id="glCta" aria-hidden="true" />
-          </div>
           <div className="wrap cta-in">
             <div className="lbl mono" data-rv="">
               <i />

@@ -206,10 +206,10 @@ var TM=[
  {n:'Field and operations',hc:6,d:'Installs, monitors and supports what we build, then brings back the data and problems that start the next question.',ul:['Site surveys and installation','Monitoring, drift and support','Customer training and handover'],give:'Data and problems from live use',get:'Releasable systems and runbooks'}
 ];
 var PEOPLE=[
- ['Lena Brandt','Research Lead','Small models and evaluation','Leads the on-device and multi-agent programmes. Writes the evaluation before the experiment, and holds everyone else to it.',41,'/research#p-01','P-01 AND P-03'],
- ['Amara Okoye','Research Engineer','Perception and sensor fusion','Works on vision that stays reliable as the world changes, from camera calibration to vehicles that navigate without satellites.',42,'/research#p-04','P-04 AND P-06'],
- ['Mateo Sato','AI Engineer','On-device inference','Gets models onto chips with a few hundred kilobytes of memory, and measures what every decision costs in energy.',43,'/research#p-02','P-02 AND P-05'],
- ['Jonas Weber','Systems and Operations','Deployment and reliability','Keeps deployed systems honest. Owns monitoring, rollbacks and the handover to the teams who run what we build.',44,'/work#p-07','FIELD CASE FILES']
+ ['Lena Brandt','Research Lead','Small models and evaluation','Leads the on-device and multi-agent programmes. Writes the evaluation before the experiment, and holds everyone else to it.',41,'/research#p-01','P-01 AND P-03','/team/team-1.jpg'],
+ ['Amara Okoye','Research Engineer','Perception and sensor fusion','Works on vision that stays reliable as the world changes, from camera calibration to vehicles that navigate without satellites.',42,'/research#p-04','P-04 AND P-06','/team/team-2.jpg'],
+ ['Mateo Sato','AI Engineer','On-device inference','Gets models onto chips with a few hundred kilobytes of memory, and measures what every decision costs in energy.',43,'/research#p-02','P-02 AND P-05','/team/team-3.jpg'],
+ ['Jonas Weber','Systems and Operations','Deployment and reliability','Keeps deployed systems honest. Owns monitoring, rollbacks and the handover to the teams who run what we build.',44,'/work#p-07','FIELD CASE FILES','/team/team-4.jpg']
 ];
 var ROLES=[
  ['Research Engineer, On-device AI','Research','Remote or hybrid','FULL TIME','Compress and evaluate models for microcontroller-class devices, and publish the results.',['Strong Python and one deep learning framework','Experience measuring accuracy under data shift','Comfort with embedded constraints is a plus']],
@@ -287,7 +287,7 @@ safe(function people(){
   $('#abRs').innerHTML=PEOPLE.map(function(p,i){return '<article class="ab-pr" data-rv style="--i:'+(i%2)+'"><span class="n mono">0'+(i+1)+'</span>'+
    '<div><h3>'+esc(p[0])+'</h3><span class="rl mono">'+esc(p[1]).toUpperCase()+' / '+esc(p[2]).toUpperCase()+'</span></div>'+
    '<div><p>'+esc(p[3])+'</p><a class="lk mono" href="'+p[5]+'">'+p[6]+' →</a></div>'+
-   '<div class="ph"><img data-kind="portrait" data-w="720" data-h="900" data-seed="'+p[4]+'" data-tint="0" width="720" height="900" alt="Placeholder portrait of '+esc(p[0])+'"></div></article>'}).join('');
+   '<div class="ph"><img src="'+p[7]+'" width="720" height="900" alt="Portrait of '+esc(p[0])+'" loading="lazy"></div></article>'}).join('');
 },'people');
 /* join */
 safe(function join(){
